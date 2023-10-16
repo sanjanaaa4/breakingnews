@@ -1,28 +1,28 @@
 module.exports.homelist = function(req, res) {
     res.render('location-list', {
-        title: 'Udemy Find courses here to learn!',
+        title: 'The Hindu Get the latest news updates here!',
         pageHeader: {
-            title: 'Udemy',
-            strapline: 'Udemy Find courses'
+            title: 'The Hindu',
+            strapline: 'Find latest news here!'
         },
-        sidebar: "Looking for courses?Udemy helps to learn something new.Let Udemy help you what are looking for.",
+        sidebar: "Are you interested to know latest updates?The hindu will help you to know the latest news over the world",
         locations: [{
-            name: 'Python',
-            address: 'Through zoom',
+            name: 'Politics',
+            address: 'About the latest politician updates',
             rating: 3,
-            facilities: ['Basics', 'Matplot', 'Pandas'],
+            facilities: ['TRS','BJP','Congress'],
             
         }, {
-            name: 'Java',
-            address: 'Through website',
+            name: 'Business',
+            address: 'About newly evolving business man',
             rating: 4,
-            facilities: ['Basics', 'classes and Interfaces', 'OOPs'],
+            facilities: ['TATA','Birla','Jio'],
             
         }, {
-            name: 'HTML',
-            address: 'Through liveclasses',
+            name: 'Sports',
+            address: 'About your favourite players ',
             rating: 2,
-            facilities: ['creating websites', 'graphics'],
+            facilities: ['Hockey','Cricket','Volley ball'],
             
         }]
     });
@@ -30,19 +30,19 @@ module.exports.homelist = function(req, res) {
 //locationInfo//
 module.exports.locationInfo = function(req, res) {
     res.render('location-info', {
-        title: 'Python',
+        title: 'Politics',
         pageHeader: {
-            title: 'Python'
+            title: 'Politics'
         },
         sidebar: {
-            context: 'Python is a object-oriented programming language and high-level general purpose programming language.',
-            callToAction: 'Python is dynamically typed and garbage collected.'
+            context: 'Politics of India works within the framework of the country`s Constitution.',
+            callToAction: 'India is a parliamentary secular democratic republic in which the president of India is the head of state & first citizen of India and the prime minister of India is the head of government.'
         },
         location: {
-            name: 'python',
-            address: 'Through zoom',
+            name: 'Politics',
+            address: 'About the latest politician updates',
             rating: 3,
-            facilities: ['Basics', 'Matplot', 'Pandas'],
+            facilities: ['TRS', 'BJP', 'Congress'],
             coords: {
                 lat: 51.455041,
                 lng: -0.9690884
@@ -65,33 +65,33 @@ module.exports.locationInfo = function(req, res) {
                 author: 'Simon Holmes',
                 rating: 5,
                 timestamp: '16 July 2013',
-                reviewText: 'What a great website. Im completely loving it.'
+                reviewText: 'Great updates'
             }, {
                 author: 'Charlie Chaplin',
                 rating: 3,
                 timestamp: '16 June 2013',
-                reviewText: 'It was okay.'
+                reviewText: 'Need to add more content'
             }]
         }
     });
 };
 
 //locationInfo2//
-module.exports.locationInfo2 = function(req, res) {
-    res.render('location-info2', {
-        title: 'Java',
+module.exports.locationInfo1 = function(req, res) {
+    res.render('location-info1', {
+        title: 'Business',
         pageHeader: {
-            title: 'Java'
+            title: 'Business'
         },
         sidebar: {
-            context: 'Java is a high-level,class based,object-oriented programing language.',
-            callToAction: 'It has been a popular choice among dvelopers for over two decades.'
+            context: 'A business is defined as an organization or enterprising entity engaged in commercial, industrial, or professional activities.',
+            callToAction: 'Businesses can be for-profit entities or non-profit organizations. '
         },
         location: {
-            name: 'Java',
-            address: 'Through website',
+            name: 'Business',
+            address: 'About the newly evolving business man',
             rating: 3,
-            facilities: ['Basics', 'classes and Interfaces', 'OOPs'],
+            facilities: ['TATA', 'Birla', 'Jio'],
             coords: {
                 lat: 51.455041,
                 lng: -0.9690884
@@ -114,32 +114,32 @@ module.exports.locationInfo2 = function(req, res) {
                 author: 'Nick Jonas',
                 rating: 5,
                 timestamp: '16 July 2013',
-                reviewText: 'What a great course. Iam enjoying it.'
+                reviewText: 'Jio is ruling the world'
             }, {
                 author: 'Karthik Aryan',
                 rating: 3,
                 timestamp: '16 June 2013',
-                reviewText: 'Im unable to catch the speed of teaching.'
+                reviewText: 'Can you provide the information in brief'
             }]
         }
     });
 };
 //locationInfo3//
-module.exports.locationInfo3 = function(req, res) {
-        res.render('location-info3', {
-            title: 'HTML',
+module.exports.locationInfo2 = function(req, res) {
+        res.render('location-info2', {
+            title: 'Sports',
             pageHeader: {
-                title: 'HTML'
+                title: 'Sports'
             },
             sidebar: {
-                context: 'HTML is the standard markup language for documents design to be displayed in the web browser.',
-                callToAction: 'It defines the meaning and structure of web content.'
+                context: 'Sport pertains to any form of physical activity or game, often competitive and organized, that aims to use, maintain, or improve physical ability and skills while providing enjoyment to participants',
+                callToAction: 'A good sport helps in building confidence and leadership skills'
             },
             location: {
-                name: 'HTML',
-                address: 'Through google meet',
+                name: 'Sports',
+                address: 'About your favourite players',
                 rating: 3,
-                facilities: ['Basics', 'Website', 'Graphics'],
+                facilities: ['Hockey', 'Cricket', 'Volley ball'],
                 coords: {
                     lat: 51.455041,
                     lng: -0.9690884
@@ -162,12 +162,12 @@ module.exports.locationInfo3 = function(req, res) {
                     author: 'Nick',
                     rating: 5,
                     timestamp: '16 July 2013',
-                    reviewText:'It is a good platform for learning.'
+                    reviewText:'Wow!this website provides best info'
                 }, {
                     author: 'Charlie Chaplin',
                     rating: 3,
                     timestamp: '16 June 2013',
-                    reviewText: 'This platform is very useful.'
+                    reviewText: 'Dont troll te players'
                 }]
             }
         });
@@ -175,9 +175,9 @@ module.exports.locationInfo3 = function(req, res) {
 //addReview//    
 module.exports.addReview = function(req, res) {
     res.render('location-review-form', {
-        title: 'Review Course on udemy',
+        title: 'Review News on The Hindu',
         pageHeader: {
-            title: 'Review Course'
+            title: 'Review News'
         }
     });
 };
